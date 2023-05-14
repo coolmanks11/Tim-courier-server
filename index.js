@@ -9,8 +9,9 @@ app.use(express.json());
 app.use(cors());
 
 const port = 3000;
-const host = "192.168.1.17";
-
+// const host = "192.168.1.17";
+// const host = "172.20.10.2"
+const host ="localhost"
 app.post("/payment-sheet", async(req, res, next) => {
     try {
         const data = req.body;
